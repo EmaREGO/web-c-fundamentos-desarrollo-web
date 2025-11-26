@@ -1,0 +1,32 @@
+/*Selector general, universal */
+*{
+margin:0;
+padding: 0;
+}
+/*Selector de etiqueta */
+body {
+    background-color: #232323;
+    color: #fff;
+}
+/* ALT SHIFT A para comentar */
+/* Selector de clase */
+.btn{
+    background-color: aquamarine;
+    padding: 15px;
+}
+/* Selector de ID */
+#social-icons{
+    background-color: rgba(255, 68, 0, 0.705);
+
+}
+/* PARA ID #### Selectores avanzados */
+#social-icons .btn{
+    border-radius: 18px;
+}
+
+/* Pseudoclase */
+.btn:hover{
+    background-color: blueviolet;
+    color: #fff;
+}
+/* https://flukeout.github.io/ */
