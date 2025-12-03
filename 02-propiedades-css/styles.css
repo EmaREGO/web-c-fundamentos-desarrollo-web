@@ -9,7 +9,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, p, a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
@@ -35,8 +35,48 @@ h1, h2, h3, h4, h5, h6, p, a {
     background-color: blueviolet;
     padding: 10px 50px; 
   /* padding-right: 50%; */
-    margin: 30px auto 0px auto;
+    margin: 30px auto 50px auto;
     text-align: center;
     border: 6px solid white;
     border-radius: 10px;
+}
+
+.card-info{
+    width: 50%;
+    padding: 5px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto; /* PARA PONER EL RECUADRO EN MEDIO*/
+    border-radius: 10px;
+}
+
+.fImage {
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+.image-icon{
+    width: 50px;
+    border-radius: 50%; 
+}
+
+.shared-icon img{
+    width: 30px;
+    cursor: pointer;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    margin-top: 20px;               
+}
+
+.card-user-info{
+    display: flex;
+    gap: 10px;
 }
