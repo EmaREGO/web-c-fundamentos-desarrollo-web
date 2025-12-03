@@ -49,6 +49,9 @@ button:hover {
   background-color: blue; /* Color del botón cuando el ratón pasa por encima */
 
 }
+body {
+    font-family: 'Roboto', sans-serif;
+}
 /* https://flukeout.github.io/ */
 
 /* 
