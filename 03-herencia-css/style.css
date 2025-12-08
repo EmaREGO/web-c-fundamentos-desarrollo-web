@@ -121,3 +121,80 @@ h2 {
     width: 220px;
     height: 25px;
 }
+
+.card-game {
+    width: 300px; /*tamanio */
+    border-radius: 20px; /* Redondear borde*/
+    overflow: hidden; /* La imagen no salga del borde redondo*/
+    position: relative;  /* Posicionar logo */
+    margin: 50px auto; /* Centrar tarjeta a la pantalla */ 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Sombra */ 
+
+}
+
+.card-header img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; /*No deformar imagen */
+    display: block; /*Quitar espacio blanco*/
+}
+
+.card-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    background-color: #1a1a1d; /*fondo detras del logo */
+    padding: 0px;
+    
+
+    /* POSICIONAMIENTO*/
+    position: absolute; /*Salir flujo normal */
+    top: 170px;
+    left: 20px; /*SEPARACION DE LA IZQUIERDA*/
+    z-index: 10; /*ENCIMA DE TODO*/ 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);   
+}
+
+.card-logo img {
+    width: 100%; /* OCUPAR TODO EL CONTENEDOR   */
+    height: 100%;
+}
+
+/* Cuerpo del contenedor*/
+.card-body{
+    background: linear-gradient(135deg, #ff4b1f, #ff9068); /*Degradado naranja*/
+    color: white; 
+    padding: 40px 20px 20px 20px; /* Padding para dejar espacio al logo*/
+    height: 120px;  /* area para el texto limpio */
+}
+
+.description {
+    font-size: 14px;
+    line-height: 1.4; 
+    margin-bottom: 25px; /*Espacio antes del footer */
+} 
+
+/*Furer */
+.card-footer {
+    height: 30px;
+    position: relative;
+}
+
+.fecha {
+    font-size: 12px;
+    opacity: 0.8;
+    position: absolute; /* Pegado a la izquierda */
+    left: 0;
+    bottom: 0;
+}
+
+.link {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 14px;
+    position: absolute; /* Pegado a la derecha */
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+}
