@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor-flexible{
+    /* display: flex; */
+    /* flex-direction: row-reverse;  para hacer inversa*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: blueviolet;
+    border: 2px solid black;
+    width: 600px;
+    height: 500px;
+    color: white;
+}
+
+
+.boxy{
+    /*  display: inline-block;  para ponerlos de manera horizontal*/
+    /* Flexbox trabaja con filas o columnas, una sola */
+    width: 80px;
+    height: 80px;
+    background-color: orange;
+    border: 2px solid black;
+    font-size: 2rem;
+}
+
+/* JUSTIFY CONTENT horizontal alineation */
+/* ALING ITEMS vertical alineation */
+
+/* eSTILOS DEL CARD */
+body{
+    background-color: lightgray;
+}
+
+.card{
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 685px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
