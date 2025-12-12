@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* Clon de starbucks */
+header {
+    display: flex;/*  pRIMERO HABILIitar las opciones del felxbox */
+    justify-content: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #bdbdbd;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+nav{
+    display: flex;
+    gap: 10px;
+}
+
+.header-left nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    transition-duration: .5s;
+
+}
+
+.header-left nav a:hover{
+    color: #00754a;
+}
+
+.header-right {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.locacion  a{
+    text-decoration: none;
+    color: black;
+    transition-duration: .5s;
+}
+
+.locacion a:hover{
+    color: #00754a;
+}
+
+.btn-registro{
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    background-color: black ;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-iniciar{
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 1px solid black;
+    background-color: white ;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.section1{
+    display: flex;
+    width: 100%;
+    max-width: 1024px;
+    justify-content: center;
+    background-color: #00754a;
+    border-radius: 8px;
+    margin: 20px auto;
+    overflow: hidden;  /* PA QUE LA IMAGEN NO SE SALGA*/
+    align-items: stretch; /* para que ambos lados tengan la misma altura     */
+}
+
+.card-left{
+    flex: 1; /* ocupa 50% del espacio disp*/
+    display: flex;
+    flex-direction: column; /* Texto arriba y boton abajo */
+    justify-content: center;
+    align-items: start;
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.card-right{
+    flex: 1; /* 50 % del espacio */
+    display: flex;
+}
+
+.navidad{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* recortar imagen para llenar hueco*/ 
+    display: block;
+}
+
+.clb{margin-top: 20px; /* separacion de texto */
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: none;
+    background-color: white ;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.clb:hover {
+    background-color: rgba(255, 255, 255, 0.707);
+}
+
+
+/* Practica conceptos */
+.contenedor-flexible{
+    display: flex; 
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 10px;
+
+    background-color: blueviolet;
+    border: 2px solid black;
+    width: 600px;
+    height: 500px;
+    color: white;
+}
+.boxy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* width: 50%; */
+    height: 80px;
+    background-color: orange;
+    border: 2px solid black;
+    font-size: 1.5rem;
+
+}
+
+.pato {
+    align-self: auto;
+    width: 50px;
+    width: 40%;
+}
+.foca {
+    align-self: auto;
+    width: 40%;
+    flex-shrink: 4;
+}
+/* .perro {
+    align-self: auto;
+    flex-grow: 1;
+} */
+.vaca {
+    align-self: auto;
+    width: 40%;
+}
+/* https://www.starbucks.com.co/ */
+
