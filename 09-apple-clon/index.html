@@ -24,6 +24,10 @@
             <li class="nav-item"><a href="">Soporte</a></li>
             <li><a href=""><i class="fas fa-search"></i></a></li>
             <li><a href=""><i class="fas fa-shopping-bag"></i></a></li>
+            
+            <li class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </li>
         </ul>
     </nav>
 
@@ -134,6 +138,14 @@
     <section class="carousel-section">
         <div class="carousel-track" id="track">
 
+            <div class="carousel-slide" id="slide-0">
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/fhmbI8Mv8fXjBW0bVcW2xg/980x551.jpg" alt="Ted Lasso">
+                <div class="tv-overlay">
+                    <span class="btn-white-pill">Ver ahora</span>
+                    <span class="tv-genre">Comdia · ¡La buena onda está de regreso!.</span>
+                </div>
+            </div>
+
             <div class="carousel-slide" id="slide-1">
                 <img src="https://is1-ssl.mzstatic.com/image/thumb/loWBfM30ydqTfNLXyl8VZw/980x551.jpg" alt="F1">
                 <div class="tv-overlay">
@@ -211,6 +223,14 @@
                 <div class="tv-overlay">
                     <span class="btn-white-pill">Ver ahora</span>
                     <span class="tv-genre">Comdia · ¡La buena onda está de regreso!.</span>
+                </div>
+            </div>
+
+            <div class="carousel-slide" id="slide-11">
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/loWBfM30ydqTfNLXyl8VZw/980x551.jpg" alt="F1">
+                <div class="tv-overlay">
+                    <span class="btn-white-pill">Ver ahora</span>
+                    <span class="tv-genre">Acción · Una leyenda del automovilismo regresa a las pistas en esta épica aventura.</span>
                 </div>
             </div>
 
@@ -323,6 +343,23 @@
         </div>
     </footer>
 
+<script>
+const footerColumns = document.querySelectorAll('.footer-links .column');
 
+footerColumns.forEach(column => {
+    const title = column.querySelector('h3');
+    
+    // Si existe un título (para evitar errores), le ponemos el click
+    if(title) {
+        title.addEventListener('click', () => {
+            // Verificamos si es pantalla móvil (menor a 834px)
+            if(window.innerWidth <= 834) {
+                // Toggle: Si tiene la clase 'active' la quita, si no, la pone
+                column.classList.toggle('active');
+            }
+        });
+    }
+});
+</script>
 </body>
 </html>
